@@ -5,8 +5,12 @@
   "license": "MIT",
   "dependencies": {
     "@craco/craco": "^6.1.1",
+    "mobx": "^6.3.0",
+    "mobx-persist-store": "^0.5.30",
+    "mobx-react-lite": "^3.2.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-intl": "^5.17.5",
     "react-scripts": "4.0.3",
     "tailwindcss-classnames": "^2.0.7",
     "unfetch": "^4.2.0"
