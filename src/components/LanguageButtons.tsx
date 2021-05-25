@@ -1,4 +1,3 @@
-import React from 'react'
 import Language from 'models/Language'
 import AppStore from 'stores/AppStore'
 import Button from 'components/Button'

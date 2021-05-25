@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import { FC } from 'react'
 import Language from 'models/Language'
 import { IntlProvider as BaseIntlProvider } from 'react-intl'
 import { observer } from 'mobx-react-lite'
