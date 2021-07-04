@@ -4,12 +4,5 @@ This template to be used for frontend applications. As opposed to [the previous 
 
 ## Available Scripts
 
-In the project directory, you can run:
-
-### `yarn start`
-
-Runs the app in the development mode.
-
-### `yarn build`
-
-Builds the app for production to the `docs` folder.
+- `yarn start` — runs the app in the development mode
+- `yarn build` — builds the app for production to the `docs` folder

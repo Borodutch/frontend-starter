@@ -5,14 +5,14 @@
   "license": "MIT",
   "dependencies": {
     "@craco/craco": "^6.1.1",
-    "mobx": "^6.3.0",
-    "mobx-persist-store": "^0.5.30",
+    "mobx": "^6.3.2",
+    "mobx-persist-store": "^1.0.3",
     "mobx-react-lite": "^3.2.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-intl": "^5.17.5",
+    "react-intl": "^5.20.4",
     "react-scripts": "4.0.3",
-    "tailwindcss-classnames": "^2.0.7",
+    "tailwindcss-classnames": "^2.2.1",
     "unfetch": "^4.2.0"
   },
   "scripts": {
@@ -42,15 +42,13 @@
     ]
   },
   "devDependencies": {
-    "@tailwindcss/postcss7-compat": "^2.0.4",
-    "@types/classnames": "^2.2.11",
     "@types/jest": "^26.0.15",
-    "@types/node": "^12.0.0",
-    "@types/react": "^17.0.0",
-    "@types/react-dom": "^17.0.0",
+    "@types/node": "^16.0.0",
+    "@types/react": "^17.0.13",
+    "@types/react-dom": "^17.0.8",
     "autoprefixer": "^9",
     "postcss": "^7",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat",
-    "typescript": "^4.1.2"
+    "typescript": "^4.3.5"
   }
 }

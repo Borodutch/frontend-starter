@@ -8,7 +8,7 @@ import ru from 'i18n/locales/ru.json'
 
 const messages = {
   en,
-  ru,
+  ru: { ...en, ...ru },
 }
 
 const IntlProvider: FC = ({ children }) => {

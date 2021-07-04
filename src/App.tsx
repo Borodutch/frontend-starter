@@ -4,6 +4,11 @@ import { BodyText } from 'components/Text'
 import IntlProvider from 'i18n/IntlProvider'
 import LanguageButtons from 'components/LanguageButtons'
 import { FormattedMessage } from 'react-intl'
+import { configure } from 'mobx'
+
+configure({
+  enforceActions: 'never',
+})
 
 const App = () => {
   const { userCount } = useApp()
