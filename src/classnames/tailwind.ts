@@ -1393,6 +1393,7 @@ export type TAlignSelf =
   | 'self-center'
   | 'self-end'
   | 'self-stretch'
+  | 'self-baseline'
 
 export type TPlaceContent =
   | 'place-content-start'
@@ -4315,6 +4316,11 @@ export type TPseudoClasses =
   | 'lg:self-stretch'
   | 'xl:self-stretch'
   | '2xl:self-stretch'
+  | 'sm:self-baseline'
+  | 'md:self-baseline'
+  | 'lg:self-baseline'
+  | 'xl:self-baseline'
+  | '2xl:self-baseline'
   | 'sm:animate-none'
   | 'md:animate-none'
   | 'lg:animate-none'
