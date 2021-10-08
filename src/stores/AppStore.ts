@@ -1,5 +1,5 @@
+import { isHydrated, makePersistable } from 'mobx-persist-store'
 import { makeAutoObservable } from 'mobx'
-import { makePersistable, isHydrated } from 'mobx-persist-store'
 import Language from 'models/Language'
 
 class AppStore {

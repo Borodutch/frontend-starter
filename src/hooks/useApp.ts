@@ -1,5 +1,5 @@
-import { useEffect, useState } from 'react'
 import { getUserCount } from 'helpers/api'
+import { useEffect, useState } from 'react'
 
 const useApp = () => {
   const [userCount, setUserCount] = useState<undefined | number>(undefined)
