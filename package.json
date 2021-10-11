@@ -18,7 +18,9 @@
   "scripts": {
     "start": "cross-env BROWSER=none craco start",
     "build": "cross-env NODE_ENV=production BUILD_PATH='./docs' craco build",
-    "generate-css-types": "tailwindcss-classnames -o src/classnames/tailwind.ts",
+    "pretty": "prettier \"src/**\"",
+    "lint": "yarn pretty && eslint --ext ts,tsx,json \"src\"",
+    "generate-css-types": "tailwindcss-classnames -o src/classnames/tailwind.ts && prettier --write \"src/classnames/tailwind.ts\"",
     "prestart": "yarn generate-css-types",
     "prebuild": "yarn generate-css-types",
     "update": "yarn build && git add . && git commit -m 'update' && git push"
@@ -44,6 +46,12 @@
     "@types/node": "^16.4.13",
     "@types/react": "^17.0.16",
     "@types/react-dom": "^17.0.9",
+    "prettier": "^2.4.1",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-react": "^7.26.1",
+    "eslint-plugin-sort-imports-es6-autofix": "^0.6.0",
+    "eslint-plugin-prettier": "^4.0.0",
     "autoprefixer": "^9",
     "cross-env": "7.0.3",
     "postcss": "^7",

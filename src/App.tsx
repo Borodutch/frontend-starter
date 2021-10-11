@@ -1,10 +1,10 @@
-import Root from 'components/Root'
-import useApp from 'hooks/useApp'
 import { BodyText } from 'components/Text'
-import IntlProvider from 'i18n/IntlProvider'
-import LanguageButtons from 'components/LanguageButtons'
 import { FormattedMessage } from 'react-intl'
 import { configure } from 'mobx'
+import IntlProvider from 'i18n/IntlProvider'
+import LanguageButtons from 'components/LanguageButtons'
+import Root from 'components/Root'
+import useApp from 'hooks/useApp'
 
 configure({
   enforceActions: 'never',
