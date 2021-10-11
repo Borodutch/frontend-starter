@@ -7,7 +7,7 @@
     "start": "cross-env BROWSER=none craco start",
     "build": "cross-env NODE_ENV=production BUILD_PATH='./docs' craco build",
     "pretty": "prettier --list-different src",
-    "lint": "yarn pretty && eslint --ext ts,tsx,json \"src\"",
+    "lint": "yarn pretty && eslint --ext ts,tsx,json src",
     "generate-css-types": "tailwindcss-classnames -o src/classnames/tailwind.ts && prettier --write \"src/classnames/tailwind.ts\"",
     "prestart": "yarn generate-css-types",
     "prebuild": "yarn generate-css-types",
