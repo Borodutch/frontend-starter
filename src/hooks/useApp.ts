@@ -13,7 +13,7 @@ const useApp = () => {
   }
 
   useEffect(() => {
-    fetchData()
+    void fetchData()
   }, [])
 
   return { userCount }

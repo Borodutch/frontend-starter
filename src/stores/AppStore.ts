@@ -7,7 +7,7 @@ class AppStore {
 
   constructor() {
     makeAutoObservable(this)
-    makePersistable(this, {
+    void makePersistable(this, {
       name: 'AppStore',
       properties: ['language'],
       storage: window.localStorage,
