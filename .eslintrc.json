@@ -14,7 +14,8 @@
     "react-hooks",
     "@typescript-eslint",
     "prettier",
-    "sort-imports-es6-autofix"
+    "sort-imports-es6-autofix",
+    "import"
   ],
   "extends": [
     "eslint:recommended",
@@ -45,6 +46,7 @@
         "ignoreMemberSort": false,
         "memberSyntaxSortOrder": ["none", "all", "multiple", "single"]
       }
-    ]
+    ],
+    "import/prefer-default-export": "error"
   }
 }
