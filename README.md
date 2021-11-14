@@ -14,6 +14,7 @@ This template is to be used for frontend applications.
 - GitHub Actions that lint and check the code on pull requests
 - `prettier` and `eslint` configured, enabled and formatting your code on save
 - List of recommended extensions for VSCode
+- It is important to keep the bundle small, so a `stats.html` file is generated on `yarn build` to visually show you the bundle size
 
 ## Local launch
 
