@@ -1,8 +1,8 @@
 import { BodyText } from 'components/Text'
-import { FormattedMessage } from 'react-intl'
+import { Message } from '@borodutch-labs/localize-react'
 import { configure } from 'mobx'
-import IntlProvider from 'i18n/IntlProvider'
 import LanguageButtons from 'components/LanguageButtons'
+import LocalizationProvider from 'localization/LocalizationProvider'
 import Root from 'components/Root'
 import useApp from 'hooks/useApp'
 
@@ -15,13 +15,13 @@ const App = () => {
 
   return (
     <Root>
-      <IntlProvider>
+      <LocalizationProvider>
         <BodyText>User count: {userCount}</BodyText>
         <BodyText>
-          <FormattedMessage id="title" />
+          <Message descriptor="title" />
         </BodyText>
         <LanguageButtons />
-      </IntlProvider>
+      </LocalizationProvider>
     </Root>
   )
 }
