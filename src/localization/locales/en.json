@@ -1,3 +1,4 @@
 {
-  "title": "Frontend Template"
+  "title": "Frontend Template",
+  "userCount": "User count: {{count}}"
 }

@@ -1,6 +1,6 @@
 import { LocalizationProvider as BaseLocalizationProvider } from '@borodutch-labs/localize-react'
 import { FC } from 'preact/compat'
-import { observer } from 'mobx-react-lite'
+import { useSnapshot } from 'valtio'
 import AppStore from 'stores/AppStore'
 import Language from 'models/Language'
 import en from 'localization/locales/en.json'
@@ -12,15 +12,17 @@ const messages = {
 }
 
 const LocalizationProvider: FC = ({ children }) => {
+  const appStore = useSnapshot(AppStore)
   return (
     <BaseLocalizationProvider
-      locale={AppStore.language}
+      locale={appStore.language}
       defaultLocale={Language.en}
       translations={messages}
+      disableCache
     >
       {children}
     </BaseLocalizationProvider>
   )
 }
 
-export default observer(LocalizationProvider)
+export default LocalizationProvider

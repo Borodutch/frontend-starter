@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import getUserCount from 'helpers/api'
 
-const useApp = () => {
+export default function useUserCount() {
   const [userCount, setUserCount] = useState<undefined | number>(undefined)
 
   const fetchData = async () => {
@@ -18,5 +18,3 @@ const useApp = () => {
 
   return { userCount }
 }
-
-export default useApp

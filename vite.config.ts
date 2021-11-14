@@ -7,7 +7,12 @@ export default defineConfig({
   plugins: [preact(), tsconfigPaths()],
   build: {
     rollupOptions: {
-      plugins: [visualizer() as unknown as Plugin],
+      plugins: [
+        visualizer({
+          gzipSize: true,
+          brotliSize: true,
+        }) as unknown as Plugin,
+      ],
     },
   },
 })

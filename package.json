@@ -28,11 +28,9 @@
   "dependencies": {
     "@borodutch-labs/localize-react": "^1.7.4",
     "@vitejs/plugin-react": "^1.0.9",
-    "mobx": "^6.3.7",
-    "mobx-persist-store": "^1.0.4",
-    "mobx-react-lite": "^3.2.2",
     "preact": "^10.5.15",
-    "unfetch": "^4.2.0"
+    "unfetch": "^4.2.0",
+    "valtio": "^1.2.6"
   },
   "devDependencies": {
     "@preact/preset-vite": "^2.1.5",
@@ -49,6 +47,7 @@
     "eslint-plugin-react": "^7.27.0",
     "eslint-plugin-react-hooks": "^4.3.0",
     "eslint-plugin-sort-imports-es6-autofix": "^0.6.0",
+    "eslint-plugin-valtio": "^0.4.1",
     "postcss": "^7",
     "prettier": "^2.4.1",
     "react-scripts": "^4.0.3",

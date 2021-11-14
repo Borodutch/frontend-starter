@@ -1,22 +1,8 @@
-import { isHydrated, makePersistable } from 'mobx-persist-store'
-import { makeAutoObservable } from 'mobx'
+import { proxy } from 'valtio'
 import Language from 'models/Language'
-
-class AppStore {
+import PersistableStore from 'stores/persistence/PersistableStore'
+class AppStore extends PersistableStore {
   language: Language = Language.en
-
-  constructor() {
-    makeAutoObservable(this)
-    void makePersistable(this, {
-      name: 'AppStore',
-      properties: ['language'],
-      storage: window.localStorage,
-    })
-  }
-
-  get isHydrated() {
-    return isHydrated(this)
-  }
 }
 
-export default new AppStore()
+export default proxy(new AppStore()).makePersistent()
