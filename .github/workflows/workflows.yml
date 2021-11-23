@@ -1,4 +1,4 @@
-name: Dosu frontend
+name: Frontend starter
 
 on:
   pull_request:
