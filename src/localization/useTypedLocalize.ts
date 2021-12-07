@@ -1,10 +1,10 @@
+import { Context, useContext } from 'react'
 import {
   LocalizationContext,
   TemplateValues,
   Translations,
 } from '@borodutch-labs/localize-react'
-import { useContext, Context } from 'react'
-import { messages } from 'localization/locales'
+import messages from 'localization/locales'
 
 type Locales = keyof typeof messages
 
@@ -33,6 +33,7 @@ type Translate = (
   defaultMessage?: string
 ) => string
 
+// eslint-disable-next-line import/prefer-default-export
 export const useLocalize = () => {
   return useContext<LocalizationContextValue>(
     LocalizationContext as Context<LocalizationContextValue>
