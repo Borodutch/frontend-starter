@@ -10,7 +10,16 @@ type Locales = keyof typeof messages
 
 type LocaleValues = typeof messages[Locales]
 
-type LoacleKeys = keyof LocaleValues
+// get all possible key paths
+type DeepKeys<T> = T extends object
+  ? {
+      [K in keyof T]-?: `${K & string}` | Concat<K & string, DeepKeys<T[K]>>
+    }[keyof T]
+  : ''
+
+type Concat<K extends string, P extends string> = `${K}${'' extends P
+  ? ''
+  : '.'}${P}`
 
 interface LocalizationContextValue {
   locale: Locales
@@ -19,7 +28,7 @@ interface LocalizationContextValue {
 }
 
 type Translate = (
-  key: LoacleKeys,
+  key: DeepKeys<LocaleValues>,
   values?: TemplateValues,
   defaultMessage?: string
 ) => string
