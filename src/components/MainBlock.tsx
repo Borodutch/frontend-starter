@@ -1,5 +1,5 @@
 import { BodyText } from 'components/Text'
-import { useLocalize } from 'localization/useTypedLocalize'
+import useLocalize from 'localization/useTypedLocalize'
 import useUserCount from 'hooks/useUserCount'
 
 export default function MainBlock() {

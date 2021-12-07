@@ -33,9 +33,10 @@ type Translate = (
   defaultMessage?: string
 ) => string
 
-// eslint-disable-next-line import/prefer-default-export
-export const useLocalize = () => {
+const useLocalize = () => {
   return useContext<LocalizationContextValue>(
     LocalizationContext as Context<LocalizationContextValue>
   )
 }
+
+export default useLocalize
