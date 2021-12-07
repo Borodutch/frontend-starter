@@ -1,5 +1,5 @@
 import { BodyText } from 'components/Text'
-import { useLocalize } from '@borodutch-labs/localize-react'
+import useLocalize from 'localization/useTypedLocalize'
 import useUserCount from 'hooks/useUserCount'
 
 export default function MainBlock() {
