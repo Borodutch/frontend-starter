@@ -1,6 +1,6 @@
 import { BodyText } from 'components/Text'
-import { useLocalize } from '@borodutch-labs/localize-react'
 import useUserCount from 'hooks/useUserCount'
+import { useLocalize } from 'localization/useTypedLocalize'
 
 export default function MainBlock() {
   const { userCount } = useUserCount()

@@ -3,13 +3,7 @@ import { FC } from 'preact/compat'
 import { useSnapshot } from 'valtio'
 import AppStore from 'stores/AppStore'
 import Language from 'models/Language'
-import en from 'localization/locales/en.json'
-import ru from 'localization/locales/ru.json'
-
-const messages = {
-  en,
-  ru: { ...en, ...ru },
-}
+import { messages } from 'localization/locales'
 
 const LocalizationProvider: FC = ({ children }) => {
   const appStore = useSnapshot(AppStore)
