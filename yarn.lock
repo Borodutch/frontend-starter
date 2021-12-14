@@ -1666,15 +1666,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@borodutch-labs/localize-react@npm:^1.7.4":
-  version: 1.7.4
-  resolution: "@borodutch-labs/localize-react@npm:1.7.4"
-  peerDependencies:
-    react: ">=16.8.0"
-  checksum: bc0a991f4e702cb0fbbf564d753569f4a5780d386e8e0a6e5c25b94d0ff289d7b6212a4146271984ae12443efcf1ae725626d92d19a0b54a487a958bfd32031c
-  languageName: node
-  linkType: hard
-
 "@cnakazawa/watch@npm:^1.0.3":
   version: 1.0.4
   resolution: "@cnakazawa/watch@npm:1.0.4"
@@ -7610,7 +7601,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "frontend-starter@workspace:."
   dependencies:
-    "@borodutch-labs/localize-react": ^1.7.4
     "@preact/preset-vite": ^2.1.5
     "@types/node": ^16.11.12
     "@types/react": ^17.0.37
@@ -7635,6 +7625,7 @@ __metadata:
     rollup-plugin-visualizer: ^5.5.2
     tailwindcss: "npm:@tailwindcss/postcss7-compat@^2"
     tailwindcss-classnames: ^2.2.6
+    typesafe-i18n: ^2.56.0
     typescript: ^4.5.3
     unfetch: ^4.2.0
     valtio: ^1.2.7
@@ -15488,6 +15479,17 @@ __metadata:
   version: 0.0.6
   resolution: "typedarray@npm:0.0.6"
   checksum: 33b39f3d0e8463985eeaeeacc3cb2e28bc3dfaf2a5ed219628c0b629d5d7b810b0eb2165f9f607c34871d5daa92ba1dc69f49051cf7d578b4cbd26c340b9d1b1
+  languageName: node
+  linkType: hard
+
+"typesafe-i18n@npm:^2.56.0":
+  version: 2.56.0
+  resolution: "typesafe-i18n@npm:2.56.0"
+  peerDependencies:
+    typescript: ">=3.5.1"
+  bin:
+    typesafe-i18n: cli/typesafe-i18n.mjs
+  checksum: 63bb70a129566d9c15add782dbf5de81031de58cc6fc50dd3b9a8a32603aedf8467f7792ec9589034ced9f1e3451b31445e46ab7f97bc090afb6a319b3caff38
   languageName: node
   linkType: hard
 

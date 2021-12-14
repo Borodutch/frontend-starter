@@ -1,15 +1,17 @@
 import { BodyText } from 'components/Text'
-import useLocalize from 'localization/useTypedLocalize'
+import { I18nContext } from 'i18n/i18n-react'
+import { useContext } from 'react'
 import useUserCount from 'hooks/useUserCount'
 
 export default function MainBlock() {
   const { userCount } = useUserCount()
-  const { translate } = useLocalize()
+
+  const { LL } = useContext(I18nContext)
 
   return (
     <>
-      <BodyText>{translate('userCount', { count: userCount || '~' })}</BodyText>
-      <BodyText>{translate('title')}</BodyText>
+      <BodyText>{LL.userCount({ count: userCount })}</BodyText>
+      <BodyText>{LL.title()}</BodyText>
     </>
   )
 }
