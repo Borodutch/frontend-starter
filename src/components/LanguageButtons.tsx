@@ -1,11 +1,10 @@
-import { I18nContext } from 'i18n/i18n-react'
-import { useContext } from 'react'
 import AppStore from 'stores/AppStore'
 import Button from 'components/Button'
 import Language from 'models/Language'
+import useI18N from 'hooks/useI18N'
 
 export default function LanguageButtons() {
-  const { setLocale } = useContext(I18nContext)
+  const { setLocale } = useI18N()
 
   return (
     <div>

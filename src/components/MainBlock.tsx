@@ -1,12 +1,11 @@
 import { BodyText } from 'components/Text'
-import { I18nContext } from 'i18n/i18n-react'
-import { useContext } from 'react'
+import useI18N from 'hooks/useI18N'
 import useUserCount from 'hooks/useUserCount'
 
 export default function MainBlock() {
   const { userCount } = useUserCount()
 
-  const { LL } = useContext(I18nContext)
+  const { LL } = useI18N()
 
   return (
     <>

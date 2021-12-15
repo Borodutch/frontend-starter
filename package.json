@@ -11,7 +11,7 @@
     "prestart": "yarn generate-css-types",
     "prebuild": "yarn generate-css-types",
     "update": "yarn build && git add . && git commit -m 'update' && git push",
-    "typesafe-i18n": "typesafe-i18n"
+    "typesafe-i18n": "typesafe-i18n --no-watch && prettier --write src/i18n/*.ts"
   },
   "browserslist": {
     "production": [

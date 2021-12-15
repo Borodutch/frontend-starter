@@ -6,8 +6,7 @@ import type { Formatters, Locales } from 'i18n/i18n-types'
 export const initFormatters: AsyncFormattersInitializer<
   Locales,
   Formatters
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-> = async (locale: Locales) => {
+> = async () => {
   const formatters: Formatters = {
     // add your formatter functions here
   }
