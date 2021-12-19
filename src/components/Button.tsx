@@ -1,5 +1,16 @@
 import { FC } from 'react'
-import { classnames } from 'classnames/tailwind'
+import {
+  backgroundColor,
+  borderColor,
+  borderRadius,
+  borderWidth,
+  classnames,
+  fontWeight,
+  margin,
+  outlineStyle,
+  padding,
+  textColor,
+} from 'classnames/tailwind'
 
 type ButtonProps = {
   onClick: () => void
@@ -7,19 +18,15 @@ type ButtonProps = {
 }
 
 const button = classnames(
-  'bg-transparent',
-  'hover:bg-blue-500',
-  'text-blue-700',
-  'font-semibold',
-  'hover:text-white',
-  'py-2',
-  'px-4',
-  'border',
-  'border-blue-500',
-  'hover:border-transparent',
-  'rounded',
-  'focus:outline-none',
-  'mx-1'
+  backgroundColor('bg-transparent', 'hover:bg-blue-500'),
+  textColor('text-blue-700', 'hover:text-white'),
+  fontWeight('font-semibold'),
+  padding('py-2', 'px-4'),
+  borderWidth('border'),
+  borderColor('border-blue-500', 'hover:border-transparent'),
+  borderRadius('rounded'),
+  outlineStyle('focus:outline-none'),
+  margin('mx-1')
 )
 const Button: FC<ButtonProps> = ({ onClick, title }) => {
   return (
