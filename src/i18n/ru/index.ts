@@ -1,8 +1,12 @@
 import en from 'i18n/en'
 import type { Translation } from 'i18n/i18n-types'
 
-export default {
-  ...(en as Translation),
+const ru = {
   title: 'Темплейт Фронтенда',
   userCount: 'Количество пользователей: {count}',
+}
+
+export default {
+  ...(en as Translation),
+  ...ru,
 } as Translation
