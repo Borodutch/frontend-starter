@@ -1,9 +1,8 @@
 import { proxy } from 'valtio'
-import Language from 'models/Language'
-import PersistableStore from 'stores/persistence/PersistableStore'
+import getUserCount from 'helpers/getUserCount'
 
-class AppStore extends PersistableStore {
-  language: Language = Language.en
+class AppStore {
+  userCount = getUserCount()
 }
 
-export default proxy(new AppStore()).makePersistent()
+export default proxy(new AppStore())

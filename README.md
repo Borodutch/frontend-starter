@@ -5,11 +5,10 @@ This template is to be used for frontend applications.
 ## Features
 
 - State management + persistence with `valtio` and `PersistableStore`
-- Less than 16kb after brotli compression (this includes **everything**) 😱
+- Around 14.03kb after brotli compression (this includes **everything**) 😱
 - `preact` under the hood with `preact/compat` makes it compatible with virtually any `react` library but still makes it faster
 - Full TypeScript support — no dangling types
 - `vite` packager and devtools make building and development lightning fast
-- Localization out of the box
 - `tailwind-css` built-in with type-safe class names
 - GitHub Actions that lint and check the code on pull requests
 - `prettier` and `eslint` configured, enabled and formatting your code on save

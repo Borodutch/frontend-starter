@@ -1,6 +1,6 @@
 import { subscribe } from 'valtio'
 
-export default class PersistableStore {
+export default class {
   makePersistent() {
     // Start persisting
     subscribe(this, () => {
