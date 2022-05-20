@@ -17,7 +17,11 @@
     "jsx": "react-jsx",
     "jsxImportSource": "preact",
     "baseUrl": "src",
-    "types": ["vite/client"]
+    "types": ["vite/client"],
+    "paths": {
+      "react": ["./node_modules/preact/compat/"],
+      "react-dom": ["./node_modules/preact/compat/"]
+    }
   },
   "include": ["src"]
 }
