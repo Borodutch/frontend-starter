@@ -1,5 +1,5 @@
-import { ComponentChild } from 'preact'
+import { ComponentChildren } from 'preact'
 
 export default interface ChildrenProp {
-  children: ComponentChild
+  children: ComponentChildren
 }
