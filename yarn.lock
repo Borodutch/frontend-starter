@@ -7942,7 +7942,7 @@ __metadata:
     tailwindcss-classnames: ^3.0.5
     typescript: ^4.6.4
     unfetch: ^4.2.0
-    valtio: ^1.6.0
+    valtio: ^1.6.1
     vite: ^2.9.9
     vite-tsconfig-paths: ^3.4.1
   languageName: unknown
@@ -14389,12 +14389,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"use-sync-external-store@npm:1.0.0":
-  version: 1.0.0
-  resolution: "use-sync-external-store@npm:1.0.0"
+"use-sync-external-store@npm:1.1.0":
+  version: 1.1.0
+  resolution: "use-sync-external-store@npm:1.1.0"
   peerDependencies:
-    react: ^16.8.0 || ^17.0.0 || ^18.0.0-rc
-  checksum: f3df10af62625169d6a8cd8d4f38942dc6817aa27398fa7f474421fd574b0c4c83679b9d15f983f482c396ee1183416eb146814c81f44241e1480acd701ef018
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0
+  checksum: 8993a0b642f91d7fcdbb02b7b3ac984bd3af4769686f38291fe7fcfe73dfb73d6c64d20dfb7e5e7fbf5a6da8f5392d6f8e5b00c243a04975595946e82c02b883
   languageName: node
   linkType: hard
 
@@ -14458,12 +14458,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"valtio@npm:^1.6.0":
-  version: 1.6.0
-  resolution: "valtio@npm:1.6.0"
+"valtio@npm:^1.6.1":
+  version: 1.6.1
+  resolution: "valtio@npm:1.6.1"
   dependencies:
     proxy-compare: 2.1.0
-    use-sync-external-store: 1.0.0
+    use-sync-external-store: 1.1.0
   peerDependencies:
     "@babel/helper-module-imports": ">=7.12"
     "@babel/types": ">=7.13"
@@ -14484,7 +14484,7 @@ __metadata:
       optional: true
     vite:
       optional: true
-  checksum: 75e015986a4d50aee472a031e434dc61a2aa7fe0673e386bdecdc2175a41f84b37344f35e749527c101fce225d8ba3c4fbfd22d026f810863a8899e650c4a6d8
+  checksum: 7f707ad74a9897dafd8cc4453b85b8f9bb799ab85cbaa4c412ccb1ffddcd8df624716f5bd56f9a56b1c15a35cf9cb2742c9af4335db077e57ef85ae7366a3c93
   languageName: node
   linkType: hard
 
