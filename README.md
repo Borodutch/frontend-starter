@@ -5,7 +5,7 @@ This template is to be used for frontend applications.
 ## Features
 
 - State management + persistence with `valtio` and `PersistableStore`
-- Around 14.03kb after brotli compression (this includes **everything**) 😱
+- Around 13.84kb after brotli compression (this includes **everything**) 😱
 - `preact` under the hood with `preact/compat` makes it compatible with virtually any `react` library but still makes it faster
 - Full TypeScript support — no dangling types
 - `vite` packager and devtools make building and development lightning fast
