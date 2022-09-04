@@ -11,7 +11,7 @@ export default defineConfig({
         visualizer({
           gzipSize: true,
           brotliSize: true,
-        }) as unknown as Plugin,
+        }) as Plugin,
       ],
     },
   },
