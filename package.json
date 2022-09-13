@@ -8,7 +8,8 @@
     "pretty": "prettier --check src",
     "lint": "yarn pretty && eslint --max-warnings 0 --ext ts,tsx,json src",
     "generate-css-types": "tailwindcss-classnames -o src/classnames/tailwind.ts && prettier --write src/classnames/tailwind.ts",
-    "update": "yarn build && rm -r docs && cp -r dist docs && git add . && git commit -m 'update' && git push"
+    "update": "yarn build && rm -r docs && cp -r dist docs && git add . && git commit -m 'update' && git push",
+    "preview": "yarn build && yarn vite preview"
   },
   "browserslist": {
     "production": [
@@ -23,24 +24,24 @@
     ]
   },
   "dependencies": {
-    "@vitejs/plugin-react": "^2.0.1",
-    "preact": "^10.10.6",
+    "@vitejs/plugin-react": "^2.1.0",
+    "preact": "^10.11.0",
     "unfetch": "^4.2.0",
-    "valtio": "^1.6.4"
+    "valtio": "^1.7.0"
   },
   "devDependencies": {
-    "@preact/preset-vite": "^2.3.0",
-    "@types/node": "^18.7.14",
-    "@typescript-eslint/eslint-plugin": "^5.36.1",
-    "@typescript-eslint/parser": "^5.36.1",
-    "autoprefixer": "^10.4.8",
+    "@preact/preset-vite": "^2.4.0",
+    "@types/node": "^18.7.17",
+    "@typescript-eslint/eslint-plugin": "^5.37.0",
+    "@typescript-eslint/parser": "^5.37.0",
+    "autoprefixer": "^10.4.10",
     "cross-env": "^7.0.3",
-    "eslint": "^8.23.0",
+    "eslint": "^8.23.1",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-no-relative-import-paths": "^1.4.0",
     "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-react": "^7.31.5",
+    "eslint-plugin-react": "^7.31.8",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-sort-imports-es6-autofix": "^0.6.0",
     "eslint-plugin-valtio": "^0.6.0",
@@ -50,8 +51,8 @@
     "rollup-plugin-visualizer": "^5.8.1",
     "tailwindcss": "^3.1.8",
     "tailwindcss-classnames": "^3.0.6",
-    "typescript": "^4.8.2",
-    "vite": "^3.0.9",
+    "typescript": "^4.8.3",
+    "vite": "^3.1.0",
     "vite-tsconfig-paths": "^3.5.0"
   },
   "packageManager": "yarn@3.2.3"
