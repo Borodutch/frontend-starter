@@ -1,6 +1,6 @@
 .DS_Store
 node_modules
-dist
+docs
 stats.html
 
 # local env files
