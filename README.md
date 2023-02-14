@@ -26,4 +26,3 @@ This template is to be used for frontend applications.
 - `yarn lint` — checks if the code is linted and formatted
 - `yarn start` — runs the app in the development mode
 - `yarn generate-css-types` — generates the CSS types for `tailwind-css`
-- `yarn update` — builds the code and pushes it to git remote
