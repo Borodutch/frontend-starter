@@ -1,9 +1,8 @@
-import { BodyText } from 'components/Text'
-import { useSnapshot } from 'valtio'
-import AppStore from 'stores/AppStore'
+import { useAtom } from 'jotai'
 import formatNumber from 'helpers/formatNumber'
+import userCount from 'atoms/userCount'
 
 export default function () {
-  const { userCount } = useSnapshot(AppStore)
-  return <BodyText>User count: {formatNumber(userCount)}</BodyText>
+  const [fetchedUserCount] = useAtom(userCount)
+  return <p>User count: {formatNumber(fetchedUserCount)}</p>
 }

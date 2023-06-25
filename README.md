@@ -1,15 +1,15 @@
-# Frontend code template in React
+# Frontend code template in `preact`
 
 This template is to be used for frontend applications.
 
 ## Features
 
-- State management + persistence with `valtio` and `PersistableStore`
-- Around 15.17kb after brotli compression (this includes **everything**) 😱
+- State management with `jotai`
+- Around 13.53kb after brotli compression (this includes **everything**) 😱
 - `preact` under the hood with `preact/compat` makes it compatible with virtually any `react` library but still makes it faster
 - Full TypeScript support — no dangling types
 - `vite` packager and devtools make building and development lightning fast
-- `tailwind-css` built-in with type-safe class names
+- `tailwind-css` built-in with 'daisyui'
 - GitHub Actions that lint and check the code on pull requests
 - `prettier` and `eslint` configured, enabled and formatting your code on save
 - List of recommended extensions for VSCode
@@ -19,10 +19,3 @@ This template is to be used for frontend applications.
 
 1. Install dependencies with `yarn`
 2. Run the server with `yarn start`
-
-## Available Scripts
-
-- `yarn build` — builds the app for production to the `docs` folder
-- `yarn lint` — checks if the code is linted and formatted
-- `yarn start` — runs the app in the development mode
-- `yarn generate-css-types` — generates the CSS types for `tailwind-css`

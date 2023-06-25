@@ -22,8 +22,7 @@
     "eslint:recommended",
     "plugin:react/jsx-runtime",
     "plugin:@typescript-eslint/recommended",
-    "plugin:prettier/recommended",
-    "plugin:valtio/recommended"
+    "plugin:prettier/recommended"
   ],
   "rules": {
     "no-relative-import-paths/no-relative-import-paths": [
