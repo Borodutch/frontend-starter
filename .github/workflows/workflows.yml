@@ -6,4 +6,4 @@ jobs:
   build-and-lint-code:
     runs-on: ubuntu-latest
     steps:
-      - uses: Borodutch/build-and-lint-code@v1.0.3
+      - uses: Borodutch/build-and-lint-code@v1.0.4
