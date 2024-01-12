@@ -9,19 +9,25 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
-    "module": "esnext",
+    "module": "esnext", 
     "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
+    "resolveJsonModule": true, 
+    "isolatedModules": true, 
     "noEmit": true,
-    "jsx": "react-jsx",
-    "jsxImportSource": "preact",
-    "baseUrl": "src",
-    "types": ["vite/client"],
+    "jsx": "react-jsx", 
+    "jsxImportSource": "preact", 
+    "baseUrl": "src", 
+    "types": ["vite/client"], 
     "paths": {
-      "react": ["../node_modules/preact/compat/"],
+      "react": ["../node_modules/preact/compat/"], 
       "react-dom": ["../node_modules/preact/compat/"]
-    }
+    },
+    "useUnknownInCatchVariables": false,
+    "noImplicitOverride": true,
+    "exactOptionalPropertyTypes": true,
+    "noPropertyAccessFromIndexSignature": true, 
+    "useDefineForClassFields": true 
   },
-  "include": ["src"]
+  "include": ["src"],
+  "exclude": ["node_modules"]
 }
