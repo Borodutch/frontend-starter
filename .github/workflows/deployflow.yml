@@ -6,6 +6,7 @@ on:
 jobs:
   build-and-deploy-app:
     permissions:
+      contents: read
       pages: write
       id-token: write
     runs-on: ubuntu-latest
