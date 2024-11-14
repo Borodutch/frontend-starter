@@ -7,7 +7,7 @@
     "start": "vite",
     "build": "cross-env NODE_ENV=production tsc && vite build",
     "pretty": "prettier --check src",
-    "lint": "yarn pretty && eslint --max-warnings 0 --ext ts,tsx,json src",
+    "lint": "yarn pretty && eslint --max-warnings 0",
     "preview": "yarn build && yarn vite preview"
   },
   "dependencies": {
@@ -17,6 +17,7 @@
   "devDependencies": {
     "@preact/preset-vite": "^2.9.1",
     "@tailwindcss/typography": "^0.5.15",
+    "@types/eslint-plugin-tailwindcss": "^3",
     "@types/node": "^22.9.0",
     "@typescript-eslint/eslint-plugin": "^8.14.0",
     "@typescript-eslint/parser": "^8.14.0",
@@ -32,12 +33,15 @@
     "eslint-plugin-react": "^7.37.2",
     "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-sort-imports-es6-autofix": "^0.6.0",
+    "eslint-plugin-tailwindcss": "^3.17.5",
     "postcss": "^8.4.49",
     "prettier": "^3.3.3",
+    "prettier-plugin-tailwindcss": "^0.6.8",
     "rollup-plugin-visualizer": "^5.12.0",
     "tailwindcss": "^3.4.14",
     "ts-node": "^10.9.2",
     "typescript": "^5.6.3",
+    "typescript-eslint": "^8.14.0",
     "vite": "^5.4.11",
     "vite-tsconfig-paths": "^5.1.2"
   },
