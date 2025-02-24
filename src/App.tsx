@@ -1,5 +1,5 @@
-import { Suspense } from 'preact/compat'
 import UserCount from 'components/UserCount'
+import { Suspense } from 'preact/compat'
 
 export default function () {
   return (
