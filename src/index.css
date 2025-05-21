@@ -1,6 +1,8 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+@plugin "daisyui" {
+  themes: caramellatte --default;
+}
+@plugin "@tailwindcss/typography";
 
 body {
   margin: 0;
