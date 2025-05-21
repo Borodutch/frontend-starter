@@ -11,7 +11,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - uses: c-hive/gha-yarn-cache@v2
       - name: Install modules
         run: yarn
         shell: bash
